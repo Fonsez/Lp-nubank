@@ -1,0 +1,57 @@
+// layout of projects
+
+// Container
+
+$container-xl: 1440px;
+$container-lg: 1140px;
+$container-md: 960px;
+$container-sm: 540px;
+
+
+// Mixins of media querie
+
+
+@mixin responsive($device){
+
+    // se o dispositivo for igual > a 1440px aplica
+    @if $device == xl{
+      // para resoluções 1440 >
+      @media screen and (min-width: $container-xl){
+        // permite escrever direto na tag
+        @content;
+      }
+    }
+
+
+    @else if $device == lg{
+      // para resoluções entre 1140 e teto 1440
+      @media screen and (max-width: $container-xl) and (min-width: $container-lg){
+        @content;
+      }
+    }
+
+
+
+    @else if $device == md{
+      // para resoluções entre 960 e teto 1140
+      @media screen and (max-width: $container-lg) and (min-width: $container-md){
+        @content;
+      }
+    }
+
+
+    @else if $device == sm{
+      // para menores que 960px
+      @media screen and (max-width: $container-md){
+        @content;
+      }
+    }
+
+
+    @else if $device == xs{
+      // para menores que 540
+      @media screen and (max-width: $container-sm){
+        @content;
+      }
+    }
+}
