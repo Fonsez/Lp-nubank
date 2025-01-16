@@ -1,1 +1,102 @@
 // Typography of projects
+
+// abrir função como function no css
+
+// valor de entrada desktop
+@mixin typeface-1($size, $device: desktop){
+  font-family: "Sora", sans-serif;
+
+      // se o tamanho q vc ta me passando é = a h1 o maior titulo e o dispositivo for igual ao desktop aplica o css
+
+      // H1
+      @if $size == h1 and $device == desktop{
+          font-size: 4rem;
+          line-height: 100%;
+      } @else if $size == h1 and $device == mobile{
+        font-size: 2.25rem;
+        line-height: 120%;
+        // aumenta fonte diminui line height
+      }  
+
+      //H2
+      @if $size == h2 and $device == desktop{
+        font-size: 3.25rem;
+        line-height: 110%;
+    } @else if $size == h2 and $device == mobile{
+      font-size: 2.25rem;
+      line-height: 120%;
+    }
+    
+      //H3
+      @if $size == h3 and $device == desktop{
+        font-size: 2.25rem;
+        line-height: 120%;
+    } @else if $size == h3 and $device == mobile{
+      font-size: 1.5rem;
+      line-height: 120%;
+    }  
+
+
+
+      //H4
+      @if $size == h4 and $device == desktop{
+        font-size: 1.5rem;
+        line-height: 130%;
+    } @else if $size == h4 and $device == mobile{
+      font-size: 1.125rem;
+      line-height: 130%;
+    }  
+
+
+
+      //H5
+      @if $size == h5 and $device == desktop{
+        font-size: 1.125rem;
+        line-height: 140%;
+    } @else if $size == h5 and $device == mobile{
+      font-size: 1rem;
+      line-height: 150%;
+    }  
+
+}
+
+
+
+@mixin typeface-2($size: p2, $device: desktop){
+
+  font-family: "Source Sans 3", sans-serif;
+
+
+        // P1
+        @if $size == p1 and $device == desktop{
+          font-size: 1.5rem;
+          line-height: 130%;
+      } @else if $size == p1 and $device == mobile{
+        font-size: 1.125rem;
+        line-height: 130%;
+      }
+    
+    
+    // P2
+
+         // P2
+        @if $size == p2 and $device == desktop{
+          font-size: 1rem;
+          line-height: 140%;
+      } @else if $size == p2 and $device == mobile{
+        font-size: 0.875rem;
+        line-height: 150%;
+      }  
+
+
+          // P3
+          @if $size == p3 and $device == desktop{
+            font-size: 0.875rem;
+            line-height: 150%;
+        } @else if $size == p3 and $device == mobile{
+          font-size: 0.875rem;
+          line-height: 150%;
+        }  
+
+
+}
