@@ -10,52 +10,52 @@
 
       // H1
       @if $size == h1 and $device == desktop{
-          font-size: 4rem;
-          line-height: 100%;
+            font-size: 4rem;
+            line-height: 100%;
       } @else if $size == h1 and $device == mobile{
-        font-size: 2.25rem;
-        line-height: 120%;
-        // aumenta fonte diminui line height
+            font-size: 2.25rem;
+            line-height: 120%;
+            // aumenta fonte diminui line height
       }  
 
       //H2
       @if $size == h2 and $device == desktop{
-        font-size: 3.25rem;
-        line-height: 110%;
+          font-size: 3.25rem;
+          line-height: 110%;
     } @else if $size == h2 and $device == mobile{
-      font-size: 2.25rem;
-      line-height: 120%;
+          font-size: 2.25rem;
+          line-height: 120%;
     }
     
       //H3
       @if $size == h3 and $device == desktop{
-        font-size: 2.25rem;
-        line-height: 120%;
+          font-size: 2.25rem;
+          line-height: 120%;
     } @else if $size == h3 and $device == mobile{
-      font-size: 1.5rem;
-      line-height: 120%;
+          font-size: 1.5rem;
+          line-height: 120%;
     }  
 
 
 
       //H4
       @if $size == h4 and $device == desktop{
-        font-size: 1.5rem;
-        line-height: 130%;
+          font-size: 1.5rem;
+          line-height: 130%;
     } @else if $size == h4 and $device == mobile{
-      font-size: 1.125rem;
-      line-height: 130%;
+          font-size: 1.125rem;
+          line-height: 130%;
     }  
 
 
 
       //H5
       @if $size == h5 and $device == desktop{
-        font-size: 1.125rem;
-        line-height: 140%;
+          font-size: 1.125rem;
+          line-height: 140%;
     } @else if $size == h5 and $device == mobile{
-      font-size: 1rem;
-      line-height: 150%;
+          font-size: 1rem;
+          line-height: 150%;
     }  
 
 }
@@ -69,34 +69,129 @@
 
         // P1
         @if $size == p1 and $device == desktop{
-          font-size: 1.5rem;
-          line-height: 130%;
+            font-size: 1.5rem;
+            line-height: 130%;
       } @else if $size == p1 and $device == mobile{
-        font-size: 1.125rem;
-        line-height: 130%;
+            font-size: 1.125rem;
+            line-height: 130%;
       }
     
     
-    // P2
-
+      // padrao
          // P2
         @if $size == p2 and $device == desktop{
-          font-size: 1rem;
-          line-height: 140%;
+            font-size: 1rem;
+            line-height: 140%;
       } @else if $size == p2 and $device == mobile{
-        font-size: 0.875rem;
-        line-height: 150%;
+            font-size: 0.875rem;
+            line-height: 150%;
       }  
 
 
           // P3
           @if $size == p3 and $device == desktop{
-            font-size: 0.875rem;
-            line-height: 150%;
+              font-size: 0.875rem;
+              line-height: 150%;
         } @else if $size == p3 and $device == mobile{
-          font-size: 0.875rem;
-          line-height: 150%;
+              font-size: 0.875rem;
+              line-height: 150%;
         }  
 
 
+}
+
+h1{
+    color: $black1;
+
+  // já inclui tudo oq coloquei no meu h1
+    @include typeface-1(h1, desktop);
+  // versão mobal
+    @include responsive(sm){
+      @include typeface-1(h1, mobile);
+  }
+}
+
+
+h2{
+    color: $black1;
+
+  // já inclui tudo oq coloquei no meu h1
+    @include typeface-1(h2, desktop);
+  // versão mobal
+    @include responsive(sm){
+      @include typeface-1(h2, mobile);
+  }
+}
+
+h3{
+    color: $black1;
+
+  // já inclui tudo oq coloquei no meu h1
+    @include typeface-1(h3, desktop);
+  // versão mobal
+    @include responsive(sm){
+      @include typeface-1(h3, mobile);
+  }
+}
+
+
+h4{
+    color: $black1;
+
+  // já inclui tudo oq coloquei no meu h1
+    @include typeface-1(h4, desktop);
+  // versão mobal
+    @include responsive(sm){
+      @include typeface-1(h4, mobile);
+  }
+}
+
+
+h5{
+
+  text-transform: uppercase;
+
+  // coloca gradient no texto
+  background: $gradient-purple1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+  font-weight: bold;
+
+  // já inclui tudo oq coloquei no meu h1
+  @include typeface-1(h5, desktop);
+  // versão mobal
+  @include responsive(sm){
+    @include typeface-1(h5, mobile);
+  }
+}
+
+p{
+    color: $gray3;
+
+    @include typeface-2(p2, desktop);
+  // versão mobal
+    @include responsive(sm){
+      @include typeface-2(p2, mobile);
+    }
+}
+
+
+.bold{
+  font-weight: bold;
+  color: $black3;
+}
+
+strong{
+  color: $black1;
+  @include typeface-2(p2, desktop);
+  @include responsive(sm){
+      @include typeface-2(p2, mobile);
+  }
+}
+
+.text-center{
+  text-align: center;
 }
