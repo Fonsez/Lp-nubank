@@ -1,0 +1,24 @@
+
+// reset
+*, *::after, *::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  // scroll suave
+  scroll-behavior: smooth;
+}
+
+body{
+  width: 100%;
+  // sempre preencer a tela inteira
+  height: 100vh;
+  // padrao html
+  position: relative;
+
+  scroll-behavior: smooth;
+
+  background-color: #1a1a1a;
+}
