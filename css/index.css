@@ -14,4 +14,13 @@ body {
   position: relative;
   scroll-behavior: smooth;
   background-color: #1a1a1a;
+}
+
+svg, img {
+  display: block;
+  width: 100%;
+}
+
+.border {
+  border: 1px solid rgb(255, 0, 0);
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,48 @@
+
+// reset
+*, *::after, *::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import "partials/colors";
+@import "partials/layout";
+@import "partials/typography";
+@import "partials/buttons";
+@import "partials/spacing";
+
+
+
+html{
+  // scroll suave
+  scroll-behavior: smooth;
+}
+
+body{
+  width: 100%;
+  // sempre preencer a tela inteira
+  height: 100vh;
+  // padrao htmlasdad
+  position: relative;
+
+  scroll-behavior: smooth;
+  
+  background-color: #1a1a1a;
+}
+
+// elementos de imagens fluidos para poder ocupar 100% do elemento de div pai
+svg, img{
+  display: block;
+  width: 100%;
+}
+
+.border{
+  border: 1px solid rgb(255, 0, 0);
+}
+
+@import "partials/menu";
+@import "partials/swiper";
+@import "partials/icons";
+@import "partials/footer";
+@import "partials/animations";
