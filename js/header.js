@@ -1,5 +1,5 @@
 
-// secoll header
+// secoll header desktop
 function scrollHeader(){
   const nav = document.getElementById('header');
 
@@ -9,16 +9,16 @@ function scrollHeader(){
 
 }
 window.addEventListener('scroll', scrollHeader);
-// fim scroll header
+// fim scroll header desktop
 
 
 
-// dropdown menu
+// dropdown menu desktop
 const dropdownMenu1 = document.getElementById('dropdown-item-1');
 const dropdownMenu2 = document.getElementById('dropdown-item-2');
 const dropdownMenu3 = document.getElementById('dropdown-item-3');
 
-// menu item
+// menu item desktop
 const menuItem1 = document.getElementById('menu-item-1');
 const menuItem2 = document.getElementById('menu-item-2');
 const menuItem3 = document.getElementById('menu-item-3');
@@ -53,7 +53,7 @@ menuItem1.addEventListener('click', ShowDropdown1);
 menuItem2.addEventListener('click', ShowDropdown2);
 menuItem3.addEventListener('click', ShowDropdown3);
 
-// função para o mouseleave
+// função para o mouseleave desktop
 function RemoveDropdown(){
   dropdownMenu1.classList.remove('active-dropdown-menu');
   dropdownMenu2.classList.remove('active-dropdown-menu');
@@ -63,3 +63,21 @@ function RemoveDropdown(){
 dropdownMenu1.addEventListener('mouseleave', RemoveDropdown);
 dropdownMenu2.addEventListener('mouseleave', RemoveDropdown);
 dropdownMenu3.addEventListener('mouseleave', RemoveDropdown);
+// fim efeitos menu desktop
+
+
+// efeitos menu mobile
+
+const showMenu = (toggleId, navId) => {
+  const toggle = document.getElementById(toggleId);
+  const nav = document.getElementById(navId);
+
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active-menu-mobile');
+      toggle.classList.toggle('active-bx');
+    });
+  }
+};
+
+showMenu('bx', 'menu-mobile');
