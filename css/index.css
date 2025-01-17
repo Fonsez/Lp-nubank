@@ -279,6 +279,7 @@ header {
 }
 .navbar-desktop .nav-desktop-item2 {
   flex: 1 1 auto;
+  gap: 16px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -286,18 +287,128 @@ header {
 
 .navbar-mobile {
   display: none;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 10px 24px;
 }
 @media screen and (max-width: 960px) {
   .navbar-mobile {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+}
+.navbar-mobile .bx {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  cursor: pointer;
+  z-index: 800;
+}
+.navbar-mobile .bx::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 17%;
+  width: 70%;
+  height: 2px;
+  transition: 0.4s ease;
+  background-color: #82269E;
+}
+.navbar-mobile .bx::before {
+  content: "";
+  position: absolute;
+  top: 64%;
+  left: 17%;
+  width: 70%;
+  height: 2px;
+  transition: 0.4s ease;
+  background-color: #82269E;
+}
+.navbar-mobile .active-bx {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  cursor: pointer;
+  z-index: 800;
+}
+.navbar-mobile .active-bx::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 17%;
+  transform: rotate(-135deg);
+  transition: 0.7s ease;
+  width: 70%;
+  height: 2px;
+  background-color: #82269E;
+}
+.navbar-mobile .active-bx::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 17%;
+  transform: rotate(-405deg);
+  transition: 0.7s ease;
+  width: 70%;
+  height: 2px;
+  background-color: #82269E;
+}
+.navbar-mobile .logo {
+  width: 48px;
+  height: 48px;
+  z-index: 800;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-mobile {
-  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: #FEFBFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate3d(0, -100px, 0);
+  transition: 1s ease;
 }
-@media screen and (max-width: 960px) {
-  .menu-mobile {
-    display: block;
-  }
+.menu-mobile .nav-list-mobile {
+  max-width: 1440px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.menu-mobile .nav-link-mobile {
+  display: inline-block;
+  font-family: "Sora", sans-serif;
+  font-size: 2.25rem;
+  line-height: 120%;
+  color: #555456;
+  padding: 16px 24px;
+  position: relative;
+}
+.menu-mobile .nav-link-mobile::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 16px;
+  width: 0%;
+  height: 2px;
+  transition: 1s ease;
+  background-color: #A950C4;
+}
+.menu-mobile .nav-link-mobile:hover {
+  color: #82269E;
+}
+.menu-mobile .nav-link-mobile:hover::after {
+  width: 100%;
+}
+
+.active-menu-mobile {
+  opacity: 1;
+  pointer-events: all;
 }/*# sourceMappingURL=index.css.map */

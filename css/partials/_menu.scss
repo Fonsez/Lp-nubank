@@ -184,7 +184,7 @@ header{
   // filho 2
   & .nav-desktop-item2{
     flex: 1 1 auto;
-  
+    gap: 16px;
     
     display: flex;
     justify-content: flex-end;
@@ -214,21 +214,196 @@ header{
 //navbar mobal em primeiro momento apagado 
 .navbar-mobile{
   display: none;
+  
+  max-width: $container-xl;
+  margin: 0 auto;
+  padding: 10px 24px;
 
 
   // quando entrar no menu small ele volta a aparecer como elemento de caixa
   @include responsive(sm){
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // hamburger padrao
+  & .bx{
+    width: 36px;
+    height: 36px;
+
+    position: relative;
+    cursor: pointer;
+    z-index: 800;
+    
+
+
+
+    // pseudo element x
+    &::after{
+      content: '';
+      position: absolute;
+      top: 40%;
+      left: 17%;
+
+      width: 70%;
+      height: 2px;
+      transition: .4s ease;
+
+      background-color: $primary-normal;
+    }
+
+    // pseudo element x
+    &::before{
+      content: '';
+      position: absolute;
+      top: 64%;
+      left: 17%;
+
+      width: 70%;
+      height: 2px;
+      transition: .4s ease;
+
+      background-color: $primary-normal;
+    }
+  }
+
+
+
+  // menu hamburger depois
+  & .active-bx{
+    width: 36px;
+    height: 36px;
+
+    position: relative;
+    cursor: pointer;
+    z-index: 800;
+    
+
+
+
+    // pseudo element x
+    &::after{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 17%;
+
+      transform: rotate(-135deg);
+      transition: .7s ease;
+
+      width: 70%;
+      height: 2px;
+
+      background-color: $primary-normal;
+    }
+
+    // pseudo element x
+    &::before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 17%;
+
+      transform: rotate(-405deg);
+      transition: .7s ease;
+
+      width: 70%;
+      height: 2px;
+
+      background-color: $primary-normal;
+    }
+  }
+
+
+
+  & .logo{
+    width: 48px;
+    height: 48px;
+    z-index: 800;
+    
+    background-color: red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 
-.menu-mobile{
-  display: none;
+// menu mobile na ativação do hamburger
+.menu-mobile {
+  
+  // ocupa tela toda
+  width: 100vw;
+  height: 100vh;
 
-  // quando entrar no menu small ele volta a aparecer como elemento de caixa
-  @include responsive(sm){
-    display: block;
+  
+
+  background-color: $white1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // desativa função para ativar no js
+  opacity: 0;
+  pointer-events: none;
+
+  // para erguer um pouco os textos
+  transform: translate3d(0, -100px, 0);
+  transition: 1s ease;
+
+
+  & .nav-list-mobile {
+    max-width: $container-xl;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  & .nav-link-mobile {
+    display: inline-block;
+
+    // incluindo tipo de fontes
+    @include typeface-1(h3, desktop);
+    color: $gray2;
+
+    // aumenta area de contato do link
+    padding: 16px 24px;
+
+    position: relative;
+
+    // efeito do pseudo
+    &::after {
+      content: '';
+      position: absolute;
+      top: 90%;
+      left: 16px;
+      
+
+      width: 0%;
+      height: 2px;
+      transition: 1s ease;
+
+      background-color: $secondary-normal;
+    }
+
+    &:hover {
+      color: $primary-normal;
+
+      &::after {
+        width: 100%;
+      }
+    }
   }
 }
-// fim efeitos responsivos de ativação navbar
+
+// Classe para ativar o menu
+.active-menu-mobile {
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+
