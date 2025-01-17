@@ -174,4 +174,86 @@ header {
 .active-header {
   background-color: #FEFBFF;
   box-shadow: 0px 51px 80px 0px rgba(169, 80, 196, 0.08), 0px 15.375px 24.118px 0px rgba(169, 80, 196, 0.05), 0px 6.386px 10.017px 0px rgba(169, 80, 196, 0.04), 0px 2.31px 3.623px 0px rgba(169, 80, 196, 0.03);
+}
+
+.navbar-desktop {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 10px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 960px) {
+  .navbar-desktop {
+    display: none;
+  }
+}
+.navbar-desktop .nav-desktop-item1 {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navbar-desktop .nav-desktop-item1 .logo {
+  width: 48px;
+  height: 48px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-desktop .nav-desktop-item1 .menu-desktop {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navbar-desktop .nav-desktop-item1 .menu-desktop .menu-item {
+  margin-left: 16px;
+}
+.navbar-desktop .nav-desktop-item1 .menu-desktop .menu-item .nav-link-desktop {
+  display: inline-block;
+  padding: 12px 16px;
+  position: relative;
+}
+.navbar-desktop .nav-desktop-item1 .menu-desktop .menu-item .nav-link-desktop::after {
+  content: "";
+  position: absolute;
+  top: 42%;
+  right: -3px;
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  border-radius: 1px;
+  transition: 0.15s ease;
+  border-bottom: 2px solid #82269E;
+  border-right: 2px solid #82269E;
+}
+.navbar-desktop .nav-desktop-item1 .menu-desktop .menu-item .nav-link-desktop:hover::after {
+  top: 45%;
+}
+.navbar-desktop .nav-desktop-item2 {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar-mobile {
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  .navbar-mobile {
+    display: block;
+  }
+}
+
+.menu-mobile {
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  .menu-mobile {
+    display: block;
+  }
 }/*# sourceMappingURL=index.css.map */
