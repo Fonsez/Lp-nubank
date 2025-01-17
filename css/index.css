@@ -150,7 +150,7 @@ body {
   height: 100vh;
   position: relative;
   scroll-behavior: smooth;
-  background-color: #ccc;
+  background-color: #EDEAEF;
 }
 
 svg, img {
@@ -211,6 +211,7 @@ header {
 }
 .navbar-desktop .nav-desktop-item1 .menu-desktop .menu-item {
   margin-left: 16px;
+  position: relative;
 }
 .navbar-desktop .nav-desktop-item1 .menu-desktop .menu-item .nav-link-desktop {
   display: inline-block;
@@ -232,6 +233,49 @@ header {
 }
 .navbar-desktop .nav-desktop-item1 .menu-desktop .menu-item .nav-link-desktop:hover::after {
   top: 45%;
+}
+.navbar-desktop .nav-desktop-item1 .dropdown-menu {
+  background-color: #EDEAEF;
+  border-radius: 16px;
+  padding: 16px 24px;
+  box-shadow: 0px 51px 80px 0px rgba(169, 80, 196, 0.08), 0px 15.375px 24.118px 0px rgba(169, 80, 196, 0.05), 0px 6.386px 10.017px 0px rgba(169, 80, 196, 0.04), 0px 2.31px 3.623px 0px rgba(169, 80, 196, 0.03);
+  list-style: none;
+  position: absolute;
+  top: 48px;
+  left: 24px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.7s ease;
+}
+.navbar-desktop .nav-desktop-item1 .dropdown-menu .dropdown-item {
+  width: 100%;
+}
+.navbar-desktop .nav-desktop-item1 .dropdown-menu .nav-link-dropdown {
+  display: inline-block;
+  width: 100%;
+  padding: 8px 16px;
+  position: relative;
+}
+.navbar-desktop .nav-desktop-item1 .dropdown-menu .nav-link-dropdown::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 0;
+  transition: 0.5s ease;
+  width: 0%;
+  height: 2px;
+  background-color: #A950C4;
+}
+.navbar-desktop .nav-desktop-item1 .dropdown-menu .nav-link-dropdown:hover::after {
+  width: 100%;
+}
+.navbar-desktop .nav-desktop-item1 .active-dropdown-menu {
+  pointer-events: all;
+  opacity: 1;
 }
 .navbar-desktop .nav-desktop-item2 {
   flex: 1 1 auto;
