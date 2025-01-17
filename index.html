@@ -9,6 +9,7 @@
   <title>LP Nubank - Fonses</title>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Source+Sans+3:wght@200..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
+  <script src="js/svg-inject.min.js"></script>
   
 </head>
 <body>
@@ -18,7 +19,11 @@
       <nav class="navbar-desktop">
         <!-- area 1 nav -->
         <div class="nav-desktop-item1">
-          <div class="logo"></div>
+          <div class="logo">
+            <a href="/">
+              <img src="./assets/svg/logonu.svg" alt="Logo nubank" onload="SVGInject(this)">
+            </a>
+          </div>
           <ul class="menu-desktop">
 
             <!-- drop -->
@@ -96,7 +101,11 @@
       <!-- navbar mobile -->
       <nav class="navbar-mobile">
         <div class="bx" id="bx"></div>
-        <div class="logo"></div>
+        <div class="logo">
+          <a href="/">
+            <img src="./assets/svg/logonu.svg" alt="Logo nubank" onload="SVGInject(this)">
+          </a>
+        </div>
         <a href="#" style="z-index: 800;">Login</a>
     </nav>
     <!-- fim navbar mobile -->
@@ -109,6 +118,24 @@
           <li><a href="#" class="nav-link-mobile">Pra você</a></li>
           <li><a href="#" class="nav-link-mobile">Quero ser Nubank</a></li>
           <li><a href="#" class="nav-link-mobile">Redes sociais</a></li>
+
+          <li class="flex">
+            <a href="/">
+              <img src="./assets/svg/icon-facebook.svg" alt="icone facebook" onload="SVGInject(this)">
+            </a>
+
+            <a href="/">
+              <img src="./assets/svg/icon-instagram.svg" alt="icone instagram" onload="SVGInject(this)">
+            </a>
+
+            <a href="/">
+              <img src="./assets/svg/icon-twitter.svg" alt="icone twitter/x" onload="SVGInject(this)">
+            </a>
+
+            <a href="/">
+              <img src="./assets/svg/icon-youtube.svg" alt="icone youtube" onload="SVGInject(this)">
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- fim menu mobile -->
@@ -120,5 +147,6 @@
     <!-- js -->
     <script src="js/app.js"></script>
     <script src="js/header.js"></script>
+    
 </body>
 </html>

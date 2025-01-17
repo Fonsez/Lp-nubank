@@ -162,6 +162,10 @@ svg, img {
   border: 1px solid rgb(255, 0, 0);
 }
 
+.flex {
+  display: flex;
+}
+
 header {
   width: 100%;
   background-color: transparent;
@@ -198,7 +202,6 @@ header {
 .navbar-desktop .nav-desktop-item1 .logo {
   width: 48px;
   height: 48px;
-  background-color: red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -358,7 +361,6 @@ header {
   width: 48px;
   height: 48px;
   z-index: 800;
-  background-color: red;
   display: flex;
   justify-content: center;
   align-items: center;

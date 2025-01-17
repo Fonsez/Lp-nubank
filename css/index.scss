@@ -43,6 +43,10 @@ svg, img{
   border: 1px solid rgb(255, 0, 0);
 }
 
+.flex{
+  display: flex
+}
+
 @import "partials/menu";
 @import "partials/swiper";
 @import "partials/icons";
