@@ -1,0 +1,16 @@
+header{
+  width: 100%;
+  background-color: transparent;
+  box-shadow: none;
+
+  transition: .5s ease;
+
+  position: fixed;
+  z-index: 800;
+  
+}
+
+.active-header{
+  background-color: $white1;
+  box-shadow: 0px 51px 80px 0px rgba(169, 80, 196, 0.08), 0px 15.375px 24.118px 0px rgba(169, 80, 196, 0.05), 0px 6.386px 10.017px 0px rgba(169, 80, 196, 0.04), 0px 2.31px 3.623px 0px rgba(169, 80, 196, 0.03);
+}
