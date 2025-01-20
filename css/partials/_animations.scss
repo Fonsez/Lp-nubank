@@ -11,9 +11,13 @@ $height-card: 0.64 * $width-card;
   perspective: 500px;
   position: relative;
 
+  
+
   & .card{
     width: $width-card;
     height: $height-card;
+
+    
 
     border-radius: 12px;
 
@@ -133,29 +137,29 @@ $height-card: 0.64 * $width-card;
   transform: translate3d(0,-150,0);
 }
 
-.bg-home-rect1{
-  animation: bg-home-rect 3s ease 0s infinite alternate;
-}
+// .bg-home-rect1{
+//   animation: bg-home-rect 3s ease 0s infinite alternate;
+// }
 
-.bg-home-rect2{
-  animation: bg-home-rect 3s ease 0.5s infinite alternate;
-}
-
-
-.bg-home-rect3{
-  animation: bg-home-rect 3s ease 1s infinite alternate;
-}
+// .bg-home-rect2{
+//   animation: bg-home-rect 3s ease 0.5s infinite alternate;
+// }
 
 
-.bg-home-rect4{
-  animation: bg-home-rect 3s ease 1.5s infinite alternate;
-}
+// .bg-home-rect3{
+//   animation: bg-home-rect 3s ease 1s infinite alternate;
+// }
 
-@keyframes bg-home-rect{
-  0%{
-    transform: translate3d(0,0,0);
-  }
-  100%{
-    transform: translate3d(0,30px,0);
-  }
-}
+
+// .bg-home-rect4{
+//   animation: bg-home-rect 3s ease 1.5s infinite alternate;
+// }
+
+// @keyframes bg-home-rect{
+//   0%{
+//     transform: translate3d(0,0,0);
+//   }
+//   100%{
+//     transform: translate3d(0,30px,0);
+//   }
+// }
