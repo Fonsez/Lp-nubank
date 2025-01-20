@@ -12,7 +12,6 @@
   align-items: center;
   flex-direction: row;
   overflow: hidden;
-  border: 1px solid red;
 }
 @media screen and (max-width: 960px) {
   .container {
@@ -91,6 +90,27 @@
 
 .hidden {
   overflow: hidden;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 1.625rem;
+}
+
+.gap-3 {
+  gap: 2rem;
+}
+
+.hero {
+  height: 90vh;
+}
+@media screen and (max-width: 960px) {
+  .hero {
+    height: auto;
+  }
 }
 
 h1 {
@@ -777,6 +797,17 @@ header {
   list-style: none;
   display: flex;
   flex-direction: column;
+}
+.menu-mobile .nav-list-mobile svg {
+  width: 36px;
+  height: 36px;
+}
+.menu-mobile .nav-list-mobile svg path {
+  stroke: #A6A6A7;
+  transition: 0.7s ease;
+}
+.menu-mobile .nav-list-mobile svg:hover path {
+  stroke: #82269E;
 }
 .menu-mobile .nav-link-mobile {
   display: inline-block;

@@ -70,7 +70,7 @@ $container-sm: 540px;
   flex-direction: row;
   overflow: hidden;
 
-  border: 1px solid red;
+  
 
   
   @include responsive(sm){
@@ -165,3 +165,23 @@ $container-sm: 540px;
 
 
 
+.gap-1{
+  gap: 1rem;
+}
+
+.gap-2{
+  gap: 1.625rem;
+}
+
+.gap-3{
+  gap: 2rem;
+}
+
+
+.hero{
+  height: 90vh;
+
+  @include responsive(sm){
+    height: auto;
+  }
+}
