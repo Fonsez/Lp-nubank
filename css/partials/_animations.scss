@@ -63,7 +63,7 @@ $height-card: 0.64 * $width-card;
 }
 
 
-// cards
+// cards icon
 
 .icon-card-hero{
   position: absolute;
@@ -108,7 +108,7 @@ $height-card: 0.64 * $width-card;
   animation: icons-hero 5s ease 2.5s infinite alternate;
 }
 
-
+// animação cards icon
 @keyframes icons-hero{
     0%{
       transform: translate3d(0,0,0);
@@ -116,4 +116,46 @@ $height-card: 0.64 * $width-card;
     100%{
       transform: translate3d(10px,-40px,0);
     }
+}
+// fim cards icon
+
+
+// inicio cartão
+
+// só da para manipular css com classes
+
+// ligth do svg
+.bh-home-blur1{
+  transform: translate3d(0,-100,0);
+}
+
+.bh-home-blur2{
+  transform: translate3d(0,-150,0);
+}
+
+.bg-home-rect1{
+  animation: bg-home-rect 3s ease 0s infinite alternate;
+}
+
+.bg-home-rect2{
+  animation: bg-home-rect 3s ease 0.5s infinite alternate;
+}
+
+
+.bg-home-rect3{
+  animation: bg-home-rect 3s ease 1s infinite alternate;
+}
+
+
+.bg-home-rect4{
+  animation: bg-home-rect 3s ease 1.5s infinite alternate;
+}
+
+@keyframes bg-home-rect{
+  0%{
+    transform: translate3d(0,0,0);
+  }
+  100%{
+    transform: translate3d(0,30px,0);
+  }
 }
