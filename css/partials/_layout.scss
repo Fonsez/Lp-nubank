@@ -228,6 +228,10 @@ $container-sm: 540px;
 }
 
 .desktop-only{
+  @include responsive(sm){
+    display: none;
+  }
+
   @include responsive(xs){
     display: none;
   }

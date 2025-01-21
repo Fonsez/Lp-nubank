@@ -145,6 +145,11 @@
   height: 64px;
 }
 
+@media screen and (max-width: 960px) {
+  .desktop-only {
+    display: none;
+  }
+}
 @media screen and (max-width: 540px) {
   .desktop-only {
     display: none;
@@ -297,7 +302,6 @@ a:hover {
   font-size: 18px;
   padding: 16px 16px 16px 40px;
   position: relative;
-  border: 1px solid red;
 }
 .link::after {
   content: "";
@@ -1162,4 +1166,58 @@ header {
 
 .bh-home-blur2 {
   transform: translate3d(0, -150, 0);
+}
+
+.people1 {
+  opacity: 0;
+  animation: people 10s ease 0s infinite;
+}
+
+.people2 {
+  opacity: 0;
+  animation: people 10s ease 5s infinite;
+}
+
+.people3 {
+  opacity: 0;
+  animation: people 10s ease 0s infinite;
+}
+
+.people4 {
+  opacity: 0;
+  animation: people 10s ease 6s infinite;
+}
+
+.people5 {
+  opacity: 0;
+  animation: people 10s ease 3s infinite;
+}
+@media screen and (max-width: 960px) {
+  .people5 {
+    opacity: 0;
+    animation: people 10s ease 0s infinite;
+  }
+}
+
+.people6 {
+  opacity: 0;
+  animation: people 10s ease 8s infinite;
+}
+@media screen and (max-width: 960px) {
+  .people6 {
+    opacity: 0;
+    animation: people 10s ease 5s infinite;
+  }
+}
+
+@keyframes people {
+  0% {
+    opacity: 0;
+  }
+  20%, 50% {
+    opacity: 1;
+  }
+  70%, 100% {
+    opacity: 0;
+  }
 }/*# sourceMappingURL=index.css.map */
