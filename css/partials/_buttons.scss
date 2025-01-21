@@ -29,3 +29,47 @@ a{
       0px 0.769896px 1.48393px rgba(169, 80, 196, 0.094071);
   }
 }
+.link{
+  display: inline-block;
+
+  color: $primary-normal;
+  background-image: url(../../assets/svg/icon-arrow.svg);
+  background-repeat: no-repeat;
+  // 0% no eixo y para centralizar e 50 no x para ir para trás
+  background-position: 0% 50%;
+  font-size: 18px;
+
+  padding: 16px 16px 16px 40px;
+
+  position: relative;
+
+  border: 1px solid red;
+
+  &::after{
+    content: '';
+    position: absolute;
+    display: block;
+    
+
+    top: 75%;
+    left: 52px;
+
+    width: 0%;
+    height: 2px;
+    border-radius: 2%;
+
+    transition: .7s ease;
+
+    background-color: $secondary-light;
+  }
+
+    &:hover{
+      opacity: 0.8;
+      padding-left: 64px;
+      background-position: 8px 50%;
+      &::after{
+        width: 90%;
+        background-color: $secondary-light;
+      }
+    }
+}
