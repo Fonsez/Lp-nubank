@@ -1,0 +1,52 @@
+.best{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  border-radius: 50px;
+
+  background-color: $white2;
+
+  @include responsive(sm){
+    flex-direction: column;
+  }
+
+  &::after{
+    content: '';
+    display: block;
+    position: absolute;
+    // sempre ficar colado
+    top: 0;
+    // sempre ficar no centro
+    left: 50%;
+    
+
+    // forçar ficar no meio
+    transform: translate(-50%, 0);
+
+    width: 124px;
+    height: 32px;
+    background-image: url(../../assets/svg/entail.svg);
+    background-repeat: no-repeat;
+  }
+
+
+  & .best-item{
+    // quando for desc quero alinhamento à esquerda tanto o eixo x quando y, já no mobile alinhamento central
+
+    display: flex;
+    // o link sempre em cima do texto n ao lado do outro
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 16px;
+    margin: 8px 0px;
+
+    @include responsive(sm){
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
