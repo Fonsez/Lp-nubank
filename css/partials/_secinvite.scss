@@ -18,3 +18,32 @@
     transform: translate(-50%, -50%) scale(1.5);
   }
 }
+
+.fignu5-ball1{
+  animation: translate-ball 5s ease 0s infinite alternate;
+}
+
+.fignu5-ball2{
+  animation: translate-ball 5s ease 0.5s infinite alternate;
+}
+
+.fignu5-ball3{
+  animation: translate-ball 5s ease 1s infinite alternate;
+}
+
+.fignu5-ball4{
+  animation: translate-ball 5s ease 1.5s infinite alternate;
+}
+
+.fignu5-ball5{
+  animation: translate-ball 5s ease 2s infinite alternate;
+}
+
+@keyframes translate-ball{
+  0%{
+    transform: translate3d(0,0,0);
+  }
+  100%{
+    transform: translate3d(200px, -100px,0);
+  }
+}
