@@ -156,6 +156,10 @@
   }
 }
 
+.block {
+  display: block;
+}
+
 h1 {
   color: #161617;
   font-family: "Sora", sans-serif;
