@@ -399,7 +399,12 @@
 
 
   <!-- inicio section invite -->
-    <sectiom class="container border">
+    <!-- pai relativo para o bg absoluto n tomar o body -->
+    <div class="bg-invite flex-center relative">
+
+      <img src="./assets/svg/fignu5.svg" class="w-auto svg-invite" onload="SVGInject(this)" />
+
+    <section class="container">
       <div class="flex-item-1 flex-center flex-column">
         <h5>Nuconta</h5>
         <h2 class="mt-2">O melhor dos bancos digitais pra você.</h2>
@@ -412,7 +417,8 @@
           <a href="/" class="btn block">Quero ser Nubank</a>
         </div>
       </div>
-    </sectiom>
+    </section>
+  </div>
   <!-- fim section invite -->
 
 

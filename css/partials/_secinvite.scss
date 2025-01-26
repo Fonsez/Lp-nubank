@@ -1,0 +1,20 @@
+.bg-invite{
+  height: 100vh;
+  overflow: hidden;
+}
+
+.svg-invite{
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  width: 100%;
+
+  z-index: -1;
+
+  @include responsive(lg){
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
