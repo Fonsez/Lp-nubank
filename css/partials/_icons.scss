@@ -7,7 +7,7 @@
 // inicio icons
 .bg-icon-mobile{
   &::after{
-    background-image: url(assets/svg/icon-mobile.svg);
+    background-image: url(../assets/svg/icon-mobile.svg);
     // fica no tamanho que eu determinei no caso 64 por 64
     background-size: cover;
     transition: .5s ease;

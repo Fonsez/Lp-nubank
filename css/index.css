@@ -1016,7 +1016,7 @@ header {
 }
 
 .bg-icon-mobile::after {
-  background-image: url(assets/svg/icon-mobile.svg);
+  background-image: url(../assets/svg/icon-mobile.svg);
   background-size: cover;
   transition: 0.5s ease;
   cursor: pointer;
