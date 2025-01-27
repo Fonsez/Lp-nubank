@@ -1,4 +1,4 @@
-# Landing Page de Aplicativo - Zingen
+# Landing Page de redesign - Nubank
 <br/>
 
 <p align="center">
