@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *::after, *::before {
   padding: 0;
   margin: 0;
@@ -7,7 +8,6 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  border: 1px solid red;
   padding: 96px 24px;
   display: flex;
   align-items: center;
@@ -1236,6 +1236,12 @@ footer h4 {
   z-index: -1;
   animation: flip-card 7s linear infinite alternate, change-bg-card 7s linear infinite alternate;
 }
+@media screen and (max-width: 540px) {
+  .div-card .card {
+    width: 280px;
+    height: 179.2px;
+  }
+}
 
 @keyframes flip-card {
   0% {
@@ -1364,6 +1370,54 @@ footer h4 {
   }
   70%, 100% {
     opacity: 0;
+  }
+}
+.logonu-letter-n {
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: logonu-letter-n 7s ease infinite alternate;
+}
+
+.logonu-letter-u {
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: logonu-letter-u 7s ease infinite alternate;
+}
+
+@keyframes logonu-letter-n {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    stroke-dasharray: 1 100;
+    stroke-width: 0;
+  }
+  20%, 50% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    stroke-dasharray: 100 0;
+    stroke-width: 1.5;
+  }
+  60%, 100% {
+    opacity: 1;
+    transform: translate3d(40px, 10px, 0) rotate(180deg);
+  }
+}
+@keyframes logonu-letter-u {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    stroke-dasharray: 1 100;
+    stroke-width: 0;
+  }
+  20%, 50% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    stroke-dasharray: 100 0;
+    stroke-width: 1.5;
+  }
+  60%, 100% {
+    opacity: 1;
+    transform: translate3d(-40px, -10px, 0) rotate(180deg);
   }
 }
 .best {
@@ -1612,4 +1666,22 @@ footer h4 {
   100% {
     transform: translate3d(200px, -100px, 0);
   }
+}
+/* Estilo para a barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px; /* Largura da barra */
+  background-color: #EDEAEF; /* Fundo da barra */
+}
+
+/* Parte que desliza (scroll thumb) */
+::-webkit-scrollbar-thumb {
+  background-color: #9C4FB4; /* Cor do thumb */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Parte superior (botão para rolar para cima) */
+::-webkit-scrollbar-button:single-button {
+  background-color: #9142A8; /* Fundo do botão */
+  height: 10px; /* Altura do botão */
+  display: block; /* Certifica que é visível */
 }/*# sourceMappingURL=index.css.map */

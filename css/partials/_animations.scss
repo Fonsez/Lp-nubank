@@ -17,7 +17,10 @@ $height-card: 0.64 * $width-card;
     width: $width-card;
     height: $height-card;
 
-    
+    @include responsive (xs){
+      width: 280px;
+      height: 179.2px;
+    }
 
     border-radius: 12px;
 
@@ -217,5 +220,62 @@ $height-card: 0.64 * $width-card;
   }
   70%,100%{
     opacity: 0;
+  }
+}
+
+
+// logo nu
+
+.logonu-letter-n {
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: logonu-letter-n 7s ease infinite alternate;
+}
+
+.logonu-letter-u {
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: logonu-letter-u 7s ease infinite alternate;
+}
+
+@keyframes logonu-letter-n {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    stroke-dasharray: 1 100;
+    stroke-width: 0;
+  }
+  20%,
+  50% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    stroke-dasharray: 100 0;
+    stroke-width: 1.5;
+  }
+  60%,
+  100% {
+    opacity: 1;
+    transform: translate3d(40px, 10px, 0) rotate(180deg);
+  }
+}
+
+@keyframes logonu-letter-u {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    stroke-dasharray: 1 100;
+    stroke-width: 0;
+  }
+  20%,
+  50% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    stroke-dasharray: 100 0;
+    stroke-width: 1.5;
+  }
+  60%,
+  100% {
+    opacity: 1;
+    transform: translate3d(-40px, -10px, 0) rotate(180deg);
   }
 }

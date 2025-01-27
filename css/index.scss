@@ -58,3 +58,23 @@ svg, img{
 @import "partials/seccard";
 @import "partials/secappnubank";
 @import "partials/secinvite";
+
+
+/* Estilo para a barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px; /* Largura da barra */
+  background-color: $white3; /* Fundo da barra */
+}
+
+/* Parte que desliza (scroll thumb) */
+::-webkit-scrollbar-thumb {
+  background-color: $primary-light; /* Cor do thumb */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Parte superior (botão para rolar para cima) */
+::-webkit-scrollbar-button:single-button {
+  background-color: $secondary-dark; /* Fundo do botão */
+  height: 10px; /* Altura do botão */
+  display: block; /* Certifica que é visível */
+}
