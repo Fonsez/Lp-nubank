@@ -1215,7 +1215,7 @@ footer h4 {
 }
 #adress .icon-footer:hover path {
   stroke-opacity: 0.6;
-  transform: scale(0.9);
+  transform: scale(1.1);
 }
 
 .bt-purle {
