@@ -135,6 +135,19 @@ $container-sm: 540px;
   flex: 2 1 auto;
 }
 
+.flex-top{
+  display: flex;
+  justify-content: center;
+  // alinhamento em relação ao container em geral
+  align-items: flex-start;
+}
+
+.flex-spacebetween{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 // widths
 
 .w-auto{

@@ -1,0 +1,60 @@
+
+footer{
+  background: linear-gradient(221deg, #A950C4 14.43%, #82269E 85.28%);
+
+
+  .list{
+    list-style: none;
+  
+    & li{
+      margin-bottom: 12px;
+    }
+  
+    & a{
+      color: $secondary-light;
+      transition: 0.5 ease;
+      
+      &:hover{
+        color: $white3;
+      }
+    }
+  }
+
+
+  & h4{
+    color: $white3;
+    font-weight: 300;
+  }
+}
+
+
+#adress{
+
+
+
+  & p{
+    color: $white3;
+  }
+
+  & .icon-footer{
+    max-width: 48px;
+    // aumenta área de contato, bom para acessibilidade
+    padding: 8px;
+
+    path{
+      stroke: $white1;
+      transition: .7s ease;
+    }
+
+    &:hover{
+      path{
+        stroke-opacity: .6;
+        transform: scale(.9);
+      }
+    }
+  }
+}
+
+.bt-purle{
+  border-top: 1px solid $secondary-light;
+}
