@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta charset="UTF-8">
@@ -12,6 +11,7 @@
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="js/svg-inject.min.js"></script>
   
 </head>
@@ -156,13 +156,13 @@
 
 
     <!-- seção hero -->
-    <main class="container hero py-5">
-      <div class="flex-item-1 py-3">
+    <main class="container hero py-5" >
+      <div class="flex-item-1 py-3" data-aos="fade-up" data-aos-delay="200">
         <h1>
           Ser Nubank é reinventar sua vida financeira.
         </h1>
         <p class="my-2">
-          Conta com rendimento acima da poupanã, cartão de crédito sem anuidade e o melhor: resolva tudo pelo APP.
+          Conta com rendimento acima da poupança, cartão de crédito sem anuidade e o melhor: resolva tudo pelo APP.
         </p>
 
         <!-- botões -->
@@ -174,7 +174,7 @@
       </div>
 
       <!-- a imagem tem q crescer mais em proporção ao texto -->
-      <div class="flex-item-3 div-card py-4 flex-center">
+      <div class="flex-item-3 div-card py-4 flex-center" data-aos="fade-up" data-aos-delay="400">
         <img src="./assets/svg/icon-card.svg" class="icon-card-hero dropshadow" alt="icone de cartão" onload="SVGInject(this)">
         <img src="./assets/svg/icon-mobile.svg" class="icon-mobile-hero dropshadow" alt="icone de celular" onload="SVGInject(this)">
         <img src="./assets/svg/icon-contactless.svg" class="icon-contactless-hero dropshadow" alt="icone de contato" onload="SVGInject(this)">
@@ -187,7 +187,7 @@
 
     <!-- inicio section people -->
     <section class="container">
-      <div class="flex-item-4 flex-column">
+      <div class="flex-item-4 flex-column" data-aos="fade-up" data-aos-delay="200">
         <h5>para todos</h5>
         <h2 class="mt-2">Completo</h2>
         <p class="my-2">
@@ -214,10 +214,10 @@
 
 
       </div>
-      <div class="flex-item-3 mx-2">
+      <div class="flex-item-3 mx-2" data-aos="fade-up" data-aos-delay="400">
         <img src="./assets/svg/svg-people1.svg" alt="foto pessoas nubank" onload="SVGInject(this)">
       </div>
-      <div class="flex-item-1 flex-column mx-2 my-3">
+      <div class="flex-item-1 flex-column mx-2 my-3" data-aos="fade-up" data-aos-delay="400"> 
         <img src="./assets/svg/svg-people2.svg" class="desktop-only mx-2 my-2" alt=" foto pessoas nubank" onload="SVGInject(this)">
         <img src="./assets/svg/svg-people3.svg" class=" mx-2 my-2" alt=" foto pessoas nubank" onload="SVGInject(this)">
       </div>
@@ -227,7 +227,7 @@
 
     <!-- inicio section best -->
     <section class="container"">
-      <div class="best px-3 py-4">
+      <div class="best px-3 py-4" data-aos="fade-up" data-aos-delay="0">
         <div class="flex-item-auto">
           <h5>O melhor</h5>
           <h2 class="mt-2">Por que Nubank</h2>
@@ -256,10 +256,10 @@
 
     <!-- inicio section conta digital -->
       <sectiom class="container">
-        <div class="flex-item-1 p-3">
+        <div class="flex-item-1 p-3" data-aos="fade-up" data-aos-delay="0">
           <img src="./assets/svg/fignu2.svg" alt="apresentação celular" onload="SVGInject(this)">
         </div>
-        <div class="flex-item-1">
+        <div class="flex-item-1" data-aos="fade-up" data-aos-delay="200">
           <h5>Conta digital</h5>
           <h2 class="mt-2">Tudo pelo App.</h2>
           <p class="my-2">
@@ -291,7 +291,7 @@
 
     <!-- inicio seção card -->
       <section class="container">
-        <div class="flex-item-2">
+        <div class="flex-item-2" data-aos="fade-up" data-aos-delay="0">
           <h5>Seu roxinho</h5>
           <h2 class="mt-2">Crédito e débito</h2>
           <p class="my-2">
@@ -315,7 +315,7 @@
 
           </ul>
         </div>
-        <div class="flex-item-1 p-3">
+        <div class="flex-item-1 p-3" data-aos="fade-up" data-aos-delay="200">
           <img src="./assets/svg/fignu3.svg" onload="SVGInject(this)" />
         </div>
       </section>  
@@ -324,11 +324,11 @@
 
 
     <!-- inicio slider -->
-    <section class="box">
+    <section class="box" data-aos="fade-up" data-aos-delay="0">
       <h5>Depoimentos</h5>
       <h2>Todos amam o roxinho</h2>
     </section>
-    <section class="container-swiper">
+    <section class="container-swiper" data-aos="fade-up" data-aos-delay="200">
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -376,7 +376,7 @@
   
     <!-- inicio seção app nubank -->
     <section class="container">
-      <div class="flex-item-2">
+      <div class="flex-item-2" data-aos="fade-up" data-aos-delay="0">
         <h5>Faça sua conta</h5>
         <h2 class="mt-2">Baixe. É gratuito</h2>
         <p class="my-2">
@@ -391,7 +391,7 @@
 
         </ul>
       </div>
-      <div class="flex-item-1 p-3">
+      <div class="flex-item-1 p-3" data-aos="fade-up" data-aos-delay="200">
         <img src="./assets/svg/fignu4.svg" onload="SVGInject(this)" />
       </div>
     </section>  
@@ -400,12 +400,12 @@
 
   <!-- inicio section invite -->
     <!-- pai relativo para o bg absoluto n tomar o body -->
-    <div class="bg-invite flex-center relative">
+    <div class="bg-invite flex-center relative" data-aos="fade-up" data-aos-delay="200">
 
       <img src="./assets/svg/fignu5.svg" class="w-auto svg-invite" onload="SVGInject(this)" />
 
     <section class="container">
-      <div class="flex-item-1 flex-center flex-column">
+      <div class="flex-item-1 flex-center flex-column" data-aos="fade-up" data-aos-delay="400">
         <h5>Nuconta</h5>
         <h2 class="mt-2">O melhor dos bancos digitais pra você.</h2>
         <p class="my-2">
@@ -506,5 +506,13 @@
     <script src="js/header.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out-quart", //curva de transição
+        duration: 1000, //duração da transição
+        once: true //animar só uma vez
+      });
+    </script>
 </body>
 </html>
