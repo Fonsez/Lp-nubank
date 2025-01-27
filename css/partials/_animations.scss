@@ -60,11 +60,11 @@ $height-card: 0.64 * $width-card;
 // animação de troca do bg
 @keyframes change-bg-card{
   0%,49%{
-    background-image: url("../../assets/svg/nubank.svg");
+    background-image: url("../assets/svg/nubank.svg");
     background-size: cover;
   }
   50%,100%{
-    background-image: url("../../assets/svg/nubank-verse.svg");
+    background-image: url("../assets/svg/nubank-verse.svg");
     background-size: cover;
   }
 }

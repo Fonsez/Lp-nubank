@@ -52,19 +52,19 @@
       background-repeat: no-repeat;
     }
     & .photo-1{
-      background-image: url(../../assets/img/1.png);
+      background-image: url(../assets/img/1.png);
     }
     & .photo-2{
-      background-image: url(../../assets/img/2.png);
+      background-image: url(../assets/img/2.png);
     }
     & .photo-3{
-      background-image: url(../../assets/img/3.png);
+      background-image: url(../assets/img/3.png);
     }
     & .photo-4{
-      background-image: url(../../assets/img/4.png);
+      background-image: url(../assets/img/4.png);
     }
     & .photo-5{
-      background-image: url(../../assets/img/5.png);
+      background-image: url(../assets/img/5.png);
     }
   }
 
@@ -78,7 +78,7 @@
 
     
     cursor: pointer;
-    background-image: url(../../assets/svg/icon-arrow.svg);
+    background-image: url(../assets/svg/icon-arrow.svg);
     background-repeat: no-repeat;
     // para ficar no centro do quadradinho
     background-position: center center;
@@ -95,7 +95,7 @@
     height: 36px;
 
     cursor: pointer;
-    background-image: url(../../assets/svg/icon-arrow.svg);
+    background-image: url(../assets/svg/icon-arrow.svg);
     background-repeat: no-repeat;
     // para ficar no centro do quadradinho
     background-position: center center;

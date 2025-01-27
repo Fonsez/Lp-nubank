@@ -313,7 +313,7 @@ a:hover {
 .link {
   display: inline-block;
   color: #82269E;
-  background-image: url(../../assets/svg/icon-arrow.svg);
+  background-image: url(../assets/svg/icon-arrow.svg);
   background-repeat: no-repeat;
   background-position: 0% 50%;
   font-size: 18px;
@@ -973,19 +973,19 @@ header {
   background-repeat: no-repeat;
 }
 .container-swiper .swiper-slide .photo-1 {
-  background-image: url(../../assets/img/1.png);
+  background-image: url(../assets/img/1.png);
 }
 .container-swiper .swiper-slide .photo-2 {
-  background-image: url(../../assets/img/2.png);
+  background-image: url(../assets/img/2.png);
 }
 .container-swiper .swiper-slide .photo-3 {
-  background-image: url(../../assets/img/3.png);
+  background-image: url(../assets/img/3.png);
 }
 .container-swiper .swiper-slide .photo-4 {
-  background-image: url(../../assets/img/4.png);
+  background-image: url(../assets/img/4.png);
 }
 .container-swiper .swiper-slide .photo-5 {
-  background-image: url(../../assets/img/5.png);
+  background-image: url(../assets/img/5.png);
 }
 .container-swiper .button-next {
   position: absolute;
@@ -994,7 +994,7 @@ header {
   width: 36px;
   height: 36px;
   cursor: pointer;
-  background-image: url(../../assets/svg/icon-arrow.svg);
+  background-image: url(../assets/svg/icon-arrow.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -1005,7 +1005,7 @@ header {
   width: 36px;
   height: 36px;
   cursor: pointer;
-  background-image: url(../../assets/svg/icon-arrow.svg);
+  background-image: url(../assets/svg/icon-arrow.svg);
   background-repeat: no-repeat;
   background-position: center center;
   transform: rotate(180deg);
@@ -1016,7 +1016,7 @@ header {
 }
 
 .bg-icon-mobile::after {
-  background-image: url(../../assets/svg/icon-mobile.svg);
+  background-image: url(assets/svg/icon-mobile.svg);
   background-size: cover;
   transition: 0.5s ease;
   cursor: pointer;
@@ -1027,7 +1027,7 @@ header {
 }
 
 .bg-icon-arrow::after {
-  background-image: url(../../assets/svg/icon-arrow.svg);
+  background-image: url(../assets/svg/icon-arrow.svg);
   background-size: cover;
   transition: 0.5s ease;
   cursor: pointer;
@@ -1038,7 +1038,7 @@ header {
 }
 
 .bg-icon-card::after {
-  background-image: url(../../assets/svg/icon-card.svg);
+  background-image: url(../assets/svg/icon-card.svg);
   background-size: cover;
   transition: 0.5s ease;
   cursor: pointer;
@@ -1049,7 +1049,7 @@ header {
 }
 
 .bg-icon-cash::after {
-  background-image: url(../../assets/svg/icon-cash.svg);
+  background-image: url(../assets/svg/icon-cash.svg);
   background-size: cover;
   transition: 0.5s ease;
   cursor: pointer;
@@ -1060,7 +1060,7 @@ header {
 }
 
 .bg-icon-check::after {
-  background-image: url(../../assets/svg/icon-check.svg);
+  background-image: url(../assets/svg/icon-check.svg);
   background-size: cover;
   transition: 0.5s ease;
   width: 40px;
@@ -1075,7 +1075,7 @@ header {
 }
 
 .bg-icon-config::after {
-  background-image: url(../../assets/svg/icon-config.svg);
+  background-image: url(../assets/svg/icon-config.svg);
   background-size: cover;
   transition: 0.5s ease;
   cursor: pointer;
@@ -1086,7 +1086,7 @@ header {
 }
 
 .bg-icon-contactless::after {
-  background-image: url(../../assets/svg/icon-contactless.svg);
+  background-image: url(../assets/svg/icon-contactless.svg);
   background-size: cover;
   transition: 0.5s ease;
   cursor: pointer;
@@ -1097,7 +1097,7 @@ header {
 }
 
 .bg-icon-facebook::after {
-  background-image: url(../../assets/svg/icon-facebook.svg);
+  background-image: url(../assets/svg/icon-facebook.svg);
   background-size: cover;
   transition: 0.5s ease;
   cursor: pointer;
@@ -1108,7 +1108,7 @@ header {
 }
 
 .bg-icon-instagram::after {
-  background-image: url(../../assets/svg/icon-instagram.svg);
+  background-image: url(../assets/svg/icon-instagram.svg);
   background-size: cover;
   transition: 0.5s ease;
   cursor: pointer;
@@ -1119,7 +1119,7 @@ header {
 }
 
 .bg-icon-phone::after {
-  background-image: url(../../assets/svg/icon-phone.svg);
+  background-image: url(../assets/svg/icon-phone.svg);
   background-size: cover;
   transition: 0.5s ease;
   cursor: pointer;
@@ -1130,7 +1130,7 @@ header {
 }
 
 .bg-icon-time::after {
-  background-image: url(../../assets/svg/icon-time.svg);
+  background-image: url(../assets/svg/icon-time.svg);
   background-size: cover;
   transition: 0.5s ease;
   cursor: pointer;
@@ -1141,7 +1141,7 @@ header {
 }
 
 .bg-icon-transfer::after {
-  background-image: url(../../assets/svg/icon-transfer.svg);
+  background-image: url(../assets/svg/icon-transfer.svg);
   background-size: cover;
   transition: 0.5s ease;
   cursor: pointer;
@@ -1152,7 +1152,7 @@ header {
 }
 
 .bg-icon-twitter::after {
-  background-image: url(../../assets/svg/icon-twitter.svg);
+  background-image: url(../assets/svg/icon-twitter.svg);
   background-size: cover;
   transition: 0.5s ease;
   cursor: pointer;
@@ -1163,7 +1163,7 @@ header {
 }
 
 .bg-icon-youtube::after {
-  background-image: url(../../assets/svg/icon-youtube.svg);
+  background-image: url(../assets/svg/icon-youtube.svg);
   background-size: cover;
   transition: 0.5s ease;
   cursor: pointer;
@@ -1259,11 +1259,11 @@ footer h4 {
 }
 @keyframes change-bg-card {
   0%, 49% {
-    background-image: url("../../assets/svg/nubank.svg");
+    background-image: url("../assets/svg/nubank.svg");
     background-size: cover;
   }
   50%, 100% {
-    background-image: url("../../assets/svg/nubank-verse.svg");
+    background-image: url("../assets/svg/nubank-verse.svg");
     background-size: cover;
   }
 }
@@ -1442,7 +1442,7 @@ footer h4 {
   transform: translate(-50%, 0);
   width: 124px;
   height: 32px;
-  background-image: url(../../assets/svg/entail.svg);
+  background-image: url(../assets/svg/entail.svg);
   background-repeat: no-repeat;
 }
 .best .best-item {
