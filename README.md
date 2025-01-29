@@ -1,4 +1,4 @@
-# Landing Page - Mubank
+# Landing Page Redesign - Nubank
 <br/>
 
 <p align="center">
@@ -48,7 +48,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 ## Preview do Projeto
 
 <div align="center">
-  <img alt="Tela inicial do projeto Zingen" src="./assets/img/mubank.gif" width="80%">
+  <img alt="Tela inicial do projeto Zingen" src="./assets/img/nubank.gif" width="80%">
 </div>
 
 ---
@@ -65,4 +65,4 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 1. **Clone o repositório:**  
    ```bash
-   git clone https://github.com/Fonsez/Lp-mubank
+   git clone https://github.com/Fonsez/Lp-nubank
