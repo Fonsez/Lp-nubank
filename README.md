@@ -1,4 +1,4 @@
-# Landing Page de redesign - Nubank
+# Landing Page - Mubank
 <br/>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 ## Sobre o Projeto
 
-Landing Page **Nubank**, uma página moderna, interativa e responsiva!
+Landing Page **Mubank**, uma página moderna, interativa e responsiva!
 
 - **Objetivo:** Colocar em prática **formas avançadas de responsividade e animações** aprendidas com o professor Násser do FrontPush.
 - **Em prática:** Técnicas com **SCSS avançado**, uso da biblioteca **SVG Inject**  para animar ícones, efeitos com **AOS (Animate On Scroll)** e manipulação de elementos e animações com **JavaScript**.
@@ -48,14 +48,14 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 ## Preview do Projeto
 
 <div align="center">
-  <img alt="Tela inicial do projeto Zingen" src="./assets/img/nubank.gif" width="80%">
+  <img alt="Tela inicial do projeto Zingen" src="./assets/img/mubank.gif" width="80%">
 </div>
 
 ---
 
 ## 🔗 Links Úteis
 
-- [Navegue pelo Site](https://fonsez.github.io/Lp-nubank/)  
+- [Navegue pelo Site](https://fonsez.github.io/Lp-mubank/)  
 - [LinkedIn](https://www.linkedin.com/in/fonses/)  
 - [Portifa](https://fonsez.github.io/port/)
 
@@ -65,4 +65,4 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 1. **Clone o repositório:**  
    ```bash
-   git clone https://github.com/Fonsez/Lp-nubank
+   git clone https://github.com/Fonsez/Lp-mubank
