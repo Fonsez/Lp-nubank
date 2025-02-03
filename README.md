@@ -1,4 +1,4 @@
-# Landing Page Redesign - Nubank
+# Landing Page Redesign - Nubank (Material de estudo, não tem vinculo com a Empresa Nubank).
 <br/>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 ## Sobre o Projeto
 
-Landing Page **Mubank**, uma página moderna, interativa e responsiva!
+Landing Page **Nubank**, uma página moderna, interativa e responsiva!
 
 - **Objetivo:** Colocar em prática **formas avançadas de responsividade e animações** aprendidas com o professor Násser do FrontPush.
 - **Em prática:** Técnicas com **SCSS avançado**, uso da biblioteca **SVG Inject**  para animar ícones, efeitos com **AOS (Animate On Scroll)** e manipulação de elementos e animações com **JavaScript**.
